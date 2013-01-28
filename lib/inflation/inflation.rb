@@ -41,6 +41,6 @@ class Numeric
 
   private
   def calculate_inflation
-    (self * (@to_year_cpi / @from_year_cpi)).round(2)
+    (self * (@to_year_cpi / @from_year_cpi))
   end
 end
