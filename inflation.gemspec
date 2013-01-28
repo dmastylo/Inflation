@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["dmastylo@codequarry.net"]
   gem.description   = %q{ Find out how much money was worth any year from 1800 to now. }
   gem.summary       = %q{ Find out how much your dollar used to be worth. }
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/dmastylo/Inflation"
 
   gem.add_development_dependency "rspec"
 
