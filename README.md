@@ -28,6 +28,10 @@ require 'inflation'
 # Or, if you like more English sounding method chaining...
 1.from_1800.to_2012
 
+# Even better, you can use from_now and to_now instead of the year
+1.from_now.to_2010
+1.from_1898.to_now
+
 # Return true if the year is supported.
 1840.year?
 => true

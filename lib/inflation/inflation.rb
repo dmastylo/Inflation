@@ -14,8 +14,18 @@ class Numeric
     self
   end
 
+  def from_now
+    @from_year_cpi = CPI[Time.now.year.to_s]
+    self
+  end
+
   def to(year=2012)
     @to_year_cpi = CPI[year.to_s]
+    calculate_inflation
+  end
+
+  def to_now
+    @to_year_cpi = CPI[Time.now.year.to_s]
     calculate_inflation
   end
 

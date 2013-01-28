@@ -35,4 +35,17 @@ describe "Inflation" do
       75.27.from_2000.to_2012.should == 100
     end
   end
+
+  context "#from_now" do
+    it "should calculate the inflation rate of the number from current year values" do
+      100.from_now.to_2000.should == 75.27
+    end
+  end
+
+  context "#to_now" do
+    it "should calculate the inflation rate of the number to current year values" do
+      1.from_1850.to_now.should == 27.50
+      75.27.from_2000.to_now.should == 100
+    end
+  end
 end
